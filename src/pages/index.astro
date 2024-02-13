@@ -1,16 +1,12 @@
 ---
-
+import Navigation from '../components/Navigation.astro';
+import MainLayout from '../layouts/MainLayout.astro';
+import '../layouts/MainLayout.scss';
+const pageTitle = 'Astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
+<MainLayout>
+		<Navigation />
 		<h1>Astro</h1>
-	</body>
-</html>
+		<tracer-button>Test</tracer-button>
+</MainLayout>
